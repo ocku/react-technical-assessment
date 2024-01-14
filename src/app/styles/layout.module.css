@@ -1,0 +1,14 @@
+.group {
+  display: flex;
+  align-items: center;
+  gap: var(--size-4);
+  padding-block: var(--size-12);
+}
+
+.tableWrapper {
+  max-width: 100%;
+}
+
+.tableWrapper > table {
+  width: 100%;
+}

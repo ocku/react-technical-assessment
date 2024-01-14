@@ -1,0 +1,90 @@
+/* global styles */
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-grey-50);
+  color: var(--color-grey-900);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  padding-inline: var(--size-8);
+  max-width: var(--width-xl);
+  margin: 0 auto;
+}
+
+#root > * {
+  max-width: var(--size-full);
+}
+
+#root > header {
+  padding-block: var(--size-8);
+}
+
+hgroup > p {
+  color: var(--color-grey-700);
+}
+
+th,
+td {
+  vertical-align: middle;
+  text-align: start;
+  padding: var(--size-2);
+}
+
+td {
+  min-width: var(--size-52);
+}
+
+table > tbody > tr:nth-child(even) {
+  background-color: var(--color-grey-100);
+}
+
+form > :is(input, textarea) {
+  display: block;
+}
+
+input,
+button,
+textarea {
+  padding: var(--size-2);
+  border-radius: var(--radius-md);
+}
+
+input,
+textarea {
+  width: 100%;
+  font-family: var(--font-sans);
+  border: 2px solid var(--color-grey-300);
+}
+
+input,
+button {
+  margin-block: var(--size-2);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: 0;
+  border: 2px solid var(--color-grey-700);
+  color: var(--color-grey-700);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: var(--color-grey-300);
+  color: var(--color-grey-600);
+  cursor: default;
+}
+
+button > svg {
+  display: block;
+}
